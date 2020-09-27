@@ -1,0 +1,10 @@
+{
+  "name": "chimera",
+  "version": "0.1.0",
+  "description": "ChimaraJS Mud Engine",
+  "main": "src/index.js",
+  "repository": "https://github.com/chimera-mud/chimera",
+  "author": "therealfugu@gmail.com",
+  "license": "MIT",
+  "private": false
+}
