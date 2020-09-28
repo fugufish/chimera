@@ -36,9 +36,20 @@ module.exports = class extends Generator {
     this.fs.copyTpl(this.templatePath("dotenv"), this.destinationPath(".env"), {
       name: this.answers.name,
     });
+
     this.fs.copyTpl(
       this.templatePath("docker-compose.yml"),
       this.destinationPath("docker-compose.yml")
+    );
+
+    this.fs.copyTpl(
+      this.templatePath("config/game.js"),
+      this.destinationPath("config/game.js")
+    );
+
+    this.fs.copyTpl(
+      this.templatePath("config/plugin.js"),
+      this.destinationPath("config/plugin.js")
     );
   }
 };

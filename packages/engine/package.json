@@ -1,11 +1,11 @@
 {
-  "name": "@chimera/core",
+  "name": "@chimera/engine",
   "version": "0.1.0",
-  "description": "Chimera Shared Library",
+  "description": "Chimera MUD Engine",
   "author": "Jarod Reid <jarod@solidalchemy.com>",
   "homepage": "https://github.com/chimera-mud/chimera#readme",
-  "license": "ISC",
-  "main": "lib/core.js",
+  "license": "MIT",
+  "main": "lib/engine.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
