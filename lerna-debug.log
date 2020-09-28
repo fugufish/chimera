@@ -1,0 +1,27 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   dev: true,
+0 silly argv   D: true,
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'node_modules/.bin/lerna',
+0 silly argv   pkg: 'eliba2/vim-node-inspect'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath /home/codespace/workspace/chimera
+3 error Error: Non-registry package missing package.json: github:eliba2/vim-node-inspect.
+3 error     at /home/codespace/workspace/chimera/node_modules/@evocateur/pacote/lib/finalize-manifest.js:164:23
+3 error     at tryCatcher (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/util.js:16:23)
+3 error     at Holder$5._callFunction (eval at generateHolderClass (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/join.js:91:16), <anonymous>:12:44)
+3 error     at Holder$5.checkFulfillment (eval at generateHolderClass (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/join.js:91:16), <anonymous>:27:30)
+3 error     at Promise.eval (eval at thenCallback (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/join.js:13:16), <anonymous>:4:20)
+3 error     at Promise._settlePromise (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/promise.js:601:21)
+3 error     at Promise._settlePromise0 (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/promise.js:649:10)
+3 error     at Promise._settlePromises (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/promise.js:729:18)
+3 error     at Promise._fulfill (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/promise.js:673:18)
+3 error     at Object.<anonymous> (/home/codespace/workspace/chimera/node_modules/bluebird/js/release/nodeback.js:42:21)
+3 error     at Object.emit (events.js:322:22)
+3 error     at Object.<anonymous> (/home/codespace/workspace/chimera/node_modules/tar/lib/parse.js:76:14)
+3 error     at Object.emit (events.js:310:20)
+3 error     at Object.[emit] (/home/codespace/workspace/chimera/node_modules/tar/lib/parse.js:235:12)
+3 error     at Object.[maybeEnd] (/home/codespace/workspace/chimera/node_modules/tar/lib/parse.js:351:17)

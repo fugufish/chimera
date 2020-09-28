@@ -4,7 +4,7 @@
   "description": "Chimera MUD Cli",
   "author": "Jarod Reid <jarod@solidalchemy.com>",
   "homepage": "https://github.com/chimera-mud/chimera#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/cli.js",
   "directories": {
     "lib": "lib",
@@ -25,5 +25,11 @@
   },
   "bugs": {
     "url": "https://github.com/chimera-mud/chimera/issues"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "jest-extended": "^0.11.5"
   }
 }
