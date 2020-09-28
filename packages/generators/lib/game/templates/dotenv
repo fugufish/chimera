@@ -1,0 +1,13 @@
+# Portal Configuration
+TELNET_HOST=0.0.0.0
+TELNET_PORT=2323
+
+# Transporter Configuration
+TRANSPORTER=nats://localhost:4222
+
+# Log Configuration
+LOG_LEVEL=trace
+LOG_FILE=/dev/stdout
+
+# World Configuration
+WORLD_NAME="<%= name %>"

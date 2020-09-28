@@ -1,7 +1,10 @@
-'use strict';
+"use strict";
 
-module.exports = portal;
-
-function portal() {
-    // TODO
+function Portal(config = {}) {
+  return {
+    name: "portal",
+    services: [require("./server")],
+  };
 }
+
+module.exports = Portal;

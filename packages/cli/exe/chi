@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { CLI } = require("../lib/cli");
+const CLI = require("../lib/cli");
 
 CLI.argv;
