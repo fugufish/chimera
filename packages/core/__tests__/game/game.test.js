@@ -1,17 +1,30 @@
 const { Game } = require("../../lib/game");
 
 describe("Game", () => {
-  describe(".services", () => {
-    it("defaults to an empty array", () => {
-      expect(game.services).toEqual([]);
-    });
+  let game;
+  beforeEach(() => {
+    game = new Game();
   });
 
   describe(".plugins", () => {
     it("defaults to an empty array", () => {
-      const game = new Game();
-
       expect(game.plugins).toEqual([]);
+    });
+  });
+
+  describe(".world", () => {
+    it("defaults to an empty array", () => {
+      expect(game.world).toEqual({
+        services: [],
+      });
+    });
+  });
+
+  describe(".portal", () => {
+    it("defaults to a world config object", () => {
+      expect(game.portal).toEqual({
+        services: [],
+      });
     });
   });
 

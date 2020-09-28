@@ -31,12 +31,12 @@ function resolveDefaultLogLevel() {
 class Game {
   constructor(config = {}) {
     this.plugins = [];
-    this.services = [];
-
-    this.broker = new ServiceBroker({
-      ...DEFAULT_OPTIONS,
-      ...config,
-    });
+    this.portal = {
+      services: [],
+    };
+    this.world = {
+      services: [],
+    };
   }
 
   /**
