@@ -3,6 +3,8 @@ const path = require("path");
 const ld = require("lodash");
 const Generator = require("yeoman-generator");
 
+const pkg = require("../../package.json");
+
 module.exports = class extends Generator {
   prompting() {
     return this.prompt([
@@ -50,6 +52,12 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath("config/plugin.js"),
       this.destinationPath("config/plugin.js")
+    );
+
+    this.fs.copyTpl(
+      this.templatePath("package.json"),
+      this.destinationPath("package.json"),
+      { chimeraVersion: pkg.version, name: ld.kebabCase(this.answers.name) }
     );
   }
 };
