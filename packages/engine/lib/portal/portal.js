@@ -7,6 +7,10 @@ class Portal extends Process {
     return "portal";
   }
 
+  get root() {
+    return __dirname
+  }
+
   get startupServices() {
     return ["server"];
   }
