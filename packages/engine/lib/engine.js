@@ -8,6 +8,10 @@ const yargs = require("yargs");
 const Core = require("./core");
 const Portal = require("./portal")
 
+/**
+ * The Engine is the root class of the game. It bootstraps the game, loading all
+ * plugins and related files.
+ */
 class Engine {
   #pluginClasses = []
 
@@ -17,19 +21,36 @@ class Engine {
     this.registerPlugin(Portal)
   }
 
+  /**
+   * Registers a plugin with the engine 
+   */
   registerPlugin(plugin) {
     this.#pluginClasses = this.#pluginClasses.concat(plugin)
   }
 
-  bootstrap() {
-    this.bootstrapPlugins();
-  }
-
-  command(...args) {
+  /**
+   * Register a CLI command with the engine
+   */
+  cliCommand(...args) {
     return yargs.command(...args)
   }
 
-  bootstrapPlugins() {
+  /**
+   * @private
+   */
+  runCli() {
+    this.#bootstrap();
+    return yargs
+      .showHelpOnFail(true)
+      .demandCommand()
+      .argv
+  }
+
+  #bootstrap() {
+    this.#bootstrapPlugins();
+  }
+
+  #bootstrapPlugins() {
     this.pluginClasses.forEach((Plugin) => {
       const plugin = new Plugin(this);
       this.plugins[plugin.name] = plugin
@@ -37,13 +58,6 @@ class Engine {
     });
   }
 
-  runCli() {
-    this.bootstrap();
-    return yargs
-      .showHelpOnFail(true)
-      .demandCommand()
-      .argv
-  }
 }
 
 module.exports = Engine
