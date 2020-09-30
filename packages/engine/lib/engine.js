@@ -9,15 +9,16 @@ const Core = require("./core");
 const Portal = require("./portal")
 
 class Engine {
+  #pluginClasses = []
+
   constructor() {
-    this.pluginClasses = [];
     this.plugins = {};
     this.registerPlugin(Core);
     this.registerPlugin(Portal)
   }
 
   registerPlugin(plugin) {
-    this.pluginClasses = this.pluginClasses.concat(plugin)
+    this.#pluginClasses = this.#pluginClasses.concat(plugin)
   }
 
   bootstrap() {
