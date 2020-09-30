@@ -36,6 +36,7 @@ class Engine {
   }
 
   /**
+   * Runs the cli
    * @private
    */
   runCli() {
