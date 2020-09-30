@@ -3,18 +3,26 @@ const glob = require("glob");
 
 const ld = require("lodash")
 
-
+/**
+ * A plugin extends the behavior of a ChimeraJS game.
+ */
 class Plugin {
   constructor(engine) {
-    this.store = require("mem-fs").create();
+    this.engine = engine
     this.bootstrapHooks = [];
   }
 
-  _bootstrap(engine) {
-    this.bootstrapCli(engine)
-    this.bootstrap(engine)
+  /**
+   * Internal bootstrap method (called by the engine)
+   */
+  _bootstrap() {
+    this.bootstrapCli()
+    this.bootstrap()
   }
 
+  /**
+   * Loads all of the CLI extensions for the application
+   */
   bootstrapCli(engine) {
     const files = glob.sync(path.join(this.root, "cli", "**", "*.js"))
     if (files.length > 0) {
@@ -32,6 +40,9 @@ class Plugin {
     }
   }
 
+  /**
+   * Override 
+   */
   bootstrap(engine) {
   }
 

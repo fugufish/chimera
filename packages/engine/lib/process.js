@@ -5,13 +5,16 @@ const { ServiceBroker } = require("moleculer")
 
 const Plugin = require("./plugin");
 
+/**
+ * A process is a plugin that runs Moleculer services.
+ */
 module.exports = class extends Plugin {
   _bootstrap(engine) {
     super._bootstrap(engine)
-    this.bootstrapServices()
+    this.#bootstrapServices()
   }
 
-  bootstrapServices() {
+  #bootstrapServices() {
     this.services = []
     const files = glob.sync(path.join(this.root, "services", "**", "*.service.js"))
     files.forEach((serviceFile) => {
@@ -19,8 +22,14 @@ module.exports = class extends Plugin {
     })
   }
 
+  /**
+   * Override to display banner for a process
+   */
   banner() { }
 
+  /**
+   * Called by the to start Moleculer
+   */
   start(engine) {
     this.banner()
     this.broker = new ServiceBroker({
