@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chimera/engine": "0.1.0"
+    "@chimera/engine": "0.1.0",
+    "dotenv": "^8.2.0"
   }
 }

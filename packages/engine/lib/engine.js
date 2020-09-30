@@ -11,13 +11,13 @@ const Portal = require("./portal")
 class Engine {
   constructor() {
     this.pluginClasses = [];
-    this.plugins = [];
+    this.plugins = {};
     this.registerPlugin(Core);
     this.registerPlugin(Portal)
   }
 
   registerPlugin(plugin) {
-    this.plugins = this.plugins.concat(plugin);
+    this.pluginClasses = this.pluginClasses.concat(plugin)
   }
 
   bootstrap() {
@@ -29,8 +29,9 @@ class Engine {
   }
 
   bootstrapPlugins() {
-    this.plugins.forEach((Plugin) => {
+    this.pluginClasses.forEach((Plugin) => {
       const plugin = new Plugin(this);
+      this.plugins[plugin.name] = plugin
       plugin._bootstrap(this)
     });
   }
@@ -44,4 +45,4 @@ class Engine {
   }
 }
 
-module.exports = Engine;
+module.exports = Engine

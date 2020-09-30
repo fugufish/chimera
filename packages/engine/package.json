@@ -29,7 +29,9 @@
   "dependencies": {
     "glob": "^7.1.6",
     "mem-fs": "^1.2.0",
-    "moleculer": "^0.14.11"
+    "moleculer": "^0.14.11",
+    "nats": "^1.4.12",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "jest": "^26.4.2",

@@ -1,0 +1,40 @@
+[2020-09-30T00:29:34.454Z] INFO  codespaces_12bd0b-15553/BROKER: Moleculer v0.14.11 is starting...
+[2020-09-30T00:29:34.454Z] INFO  codespaces_12bd0b-15553/BROKER: Namespace: <not defined>
+[2020-09-30T00:29:34.454Z] INFO  codespaces_12bd0b-15553/BROKER: Node ID: codespaces_12bd0b-15553
+[2020-09-30T00:29:34.455Z] INFO  codespaces_12bd0b-15553/REGISTRY: Strategy: RoundRobinStrategy
+[2020-09-30T00:29:34.455Z] INFO  codespaces_12bd0b-15553/REGISTRY: Discoverer: LocalDiscoverer
+[2020-09-30T00:29:34.457Z] INFO  codespaces_12bd0b-15553/BROKER  : Serializer: JSONSerializer
+[2020-09-30T00:29:34.481Z] INFO  codespaces_12bd0b-15553/BROKER  : Validator: FastestValidator
+[2020-09-30T00:29:34.483Z] INFO  codespaces_12bd0b-15553/BROKER  : Registered 13 internal middleware(s).
+[2020-09-30T00:29:34.484Z] INFO  codespaces_12bd0b-15553/BROKER     : Transporter: NatsTransporter
+[2020-09-30T00:29:34.497Z] INFO  codespaces_12bd0b-15553/BROKER         : registered plugins: [ 'Core', 'Portal', 'Example' ]
+[2020-09-30T00:29:34.500Z] INFO  codespaces_12bd0b-15553/TRANSIT                  : Connecting to the transporter...
+[2020-09-30T00:29:34.536Z] INFO  codespaces_12bd0b-15553/TRANSPORTER              : NATS client is connected.
+[2020-09-30T00:29:35.044Z] INFO  codespaces_12bd0b-15553/PORTAL.SERVER            : starting listener on '2323: 0.0.0.0'
+[2020-09-30T00:29:35.058Z] INFO  codespaces_12bd0b-15553/REGISTRY                 : '$node' service is registered.
+[2020-09-30T00:29:35.058Z] INFO  codespaces_12bd0b-15553/REGISTRY                 : 'portal.connection-manager' service is registered.
+[2020-09-30T00:29:35.058Z] INFO  codespaces_12bd0b-15553/$NODE                    : Service '$node' started.
+[2020-09-30T00:29:35.060Z] INFO  codespaces_12bd0b-15553/PORTAL.CONNECTION-MANAGER: Service 'portal.connection-manager' started.
+[2020-09-30T00:29:35.061Z] INFO  codespaces_12bd0b-15553/REGISTRY                 : 'portal.server' service is registered.
+[2020-09-30T00:29:35.061Z] INFO  codespaces_12bd0b-15553/PORTAL.SERVER            : Service 'portal.server' started.
+[2020-09-30T00:29:35.064Z] INFO  codespaces_12bd0b-15553/BROKER                   : ✔ ServiceBroker with 3 service(s) is started successfully in 565ms.
+[2020-09-30T00:33:49.677Z] INFO  codespaces_12bd0b-15707/BROKER: Moleculer v0.14.11 is starting...
+[2020-09-30T00:33:49.677Z] INFO  codespaces_12bd0b-15707/BROKER: Namespace: <not defined>
+[2020-09-30T00:33:49.677Z] INFO  codespaces_12bd0b-15707/BROKER: Node ID: codespaces_12bd0b-15707
+[2020-09-30T00:33:49.678Z] INFO  codespaces_12bd0b-15707/REGISTRY: Strategy: RoundRobinStrategy
+[2020-09-30T00:33:49.678Z] INFO  codespaces_12bd0b-15707/REGISTRY: Discoverer: LocalDiscoverer
+[2020-09-30T00:33:49.679Z] INFO  codespaces_12bd0b-15707/BROKER  : Serializer: JSONSerializer
+[2020-09-30T00:33:49.689Z] INFO  codespaces_12bd0b-15707/BROKER  : Validator: FastestValidator
+[2020-09-30T00:33:49.690Z] INFO  codespaces_12bd0b-15707/BROKER  : Registered 13 internal middleware(s).
+[2020-09-30T00:33:49.691Z] INFO  codespaces_12bd0b-15707/BROKER     : Transporter: NatsTransporter
+[2020-09-30T00:33:49.712Z] INFO  codespaces_12bd0b-15707/BROKER         : registered plugins: [ 'Core', 'Portal', 'Example' ]
+[2020-09-30T00:33:49.716Z] INFO  codespaces_12bd0b-15707/TRANSIT                  : Connecting to the transporter...
+[2020-09-30T00:33:49.742Z] INFO  codespaces_12bd0b-15707/TRANSPORTER              : NATS client is connected.
+[2020-09-30T00:33:50.253Z] INFO  codespaces_12bd0b-15707/PORTAL.SERVER            : starting listener on '2323: 0.0.0.0'
+[2020-09-30T00:33:50.263Z] INFO  codespaces_12bd0b-15707/REGISTRY                 : '$node' service is registered.
+[2020-09-30T00:33:50.264Z] INFO  codespaces_12bd0b-15707/REGISTRY                 : 'portal.connection-manager' service is registered.
+[2020-09-30T00:33:50.264Z] INFO  codespaces_12bd0b-15707/$NODE                    : Service '$node' started.
+[2020-09-30T00:33:50.264Z] INFO  codespaces_12bd0b-15707/PORTAL.CONNECTION-MANAGER: Service 'portal.connection-manager' started.
+[2020-09-30T00:33:50.264Z] INFO  codespaces_12bd0b-15707/REGISTRY                 : 'portal.server' service is registered.
+[2020-09-30T00:33:50.264Z] INFO  codespaces_12bd0b-15707/PORTAL.SERVER            : Service 'portal.server' started.
+[2020-09-30T00:33:50.266Z] INFO  codespaces_12bd0b-15707/BROKER                   : ✔ ServiceBroker with 3 service(s) is started successfully in 552ms.

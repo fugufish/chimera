@@ -1,8 +1,16 @@
-const yargs = require("yargs");
+const path = require("path")
 
 const Engine = require("../engine");
 
-function cli(engine = new Engine()) {
+function cli() {
+  let engine;
+
+  if (path.join(process.cwd(), "config", "engine.js")) {
+    engine = require(path.join(process.cwd(), "config", "engine"))
+  } else {
+    engine = new Engine()
+  }
+
   return engine.runCli();
 }
 

@@ -5,7 +5,7 @@ const ld = require("lodash")
 
 
 class Plugin {
-  constructor() {
+  constructor(engine) {
     this.store = require("mem-fs").create();
     this.bootstrapHooks = [];
   }
@@ -23,7 +23,7 @@ class Plugin {
         `cli commands provided by the '${this.name}' plugin`,
         (cmd) => {
           files.forEach((cliFile) => {
-            cmd.command(...require(cliFile))
+            cmd.command(...require(cliFile)(engine))
               .showHelpOnFail(true)
               .demandCommand()
           })
